@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    body{font-family: 'Poppins',sans-serif;font-size: 15px;background-color: hsl(0, 0%, 98%);z-index: 0;}
+    h1{text-align: center;color: hsl(234, 12%, 34%);}
+    h2{margin-left: 5%;}
+    p{color: hsl(229, 6%, 66%)}
+    .cards p{margin-left: 5%;}
+    .cards{display: flex;flex-direction: row;justify-content: space-evenly;width: 80%;margin-left: 10%;margin-right: 10%;margin-top: 5%;margin-bottom: 10%;}
+    .card1,.card2,.card3{width: 30%;display: flex;flex-direction: column;height: fit-content}
+    img{width: 64px;height: 64px;padding-left: 70%;margin-top: 5%;margin-bottom: 10%;}
+    .card1{border-top:5px solid cyan;border-radius: 10px;z-index: 1;box-shadow: 2px 2px whitesmoke ;margin-top: 15%;}
+    .innercard1{border-top: 5px solid hsl(0, 78%, 62%);border-radius: 10px;box-shadow: 2px 2px whitesmoke;z-index: 1;}
+    .innercard2{border-top: 5px solid hsl(34, 97%, 64%); margin-top: 20%;border-radius: 10px;z-index: 1;box-shadow: 2px 2px whitesmoke;}
+    .card3{border-top: 5px solid hsl(212, 86%, 64%); border-radius: 10px;z-index: 1;box-shadow: 2px 2px whitesmoke;margin-top: 15%;}
+    .color{background-color:hsl(0, 78%, 62%);height: 3px;}
+    @media screen and (max-width:600px) {
+      .cards{display: flex;flex-direction: column;justify-content: space-evenly;width: 90%;margin-left: 5%;margin-right: 5%;}
+      .card1,.card2,.card3{width: 100%;margin-top: 5%;}
+      
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <h1 style="font-weight: 400;">Reliable,efficient delivery</h1>
+  <h1>Powered by Technology</h1>
+  <p style="text-align: center;">Our Artificial Intelligence powered tools use millions of project data <br> points to ensure that your project is successfull</p>
+  <div class='cards'>
+    <div class='card1'>
+      <h2>Supervisor</h2>
+      <p>Monitors activity to identify <br> project roadblocks</p>
+      <img src="./images/icon-supervisor.svg" alt="supervisor icon image">
+
+    </div>
+    <div class='card2'>
+      <div class='innercard1'>
+        <h2>Team Builder</h2>
+        <p>Scans our talent network to create the optimal team for your project</p>
+        <img src="./images/icon-team-builder.svg" alt="teambuilder image">
+
+      </div>
+      <div class='innercard2'>
+        <h2>Karma</h2>
+        <p> Regularly evaluates our talent to ensure quality</p>
+        <img src="./images/icon-karma.svg" alt="karma image">
+
+      </div>
+
+    </div>
+    <div class='card3'>
+      <h2>Calculator</h2>
+      <p> Uses data from past projects to provide <br> better delivery estimates</p>
+      <img src="./images/icon-calculator.svg" alt="Calculator image">
+
+    </div>
+  </div>
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Rahul Solanki</a>.
+    </p>
+  </footer>
+</body>
+</html>
